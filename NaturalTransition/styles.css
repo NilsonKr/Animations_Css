@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: beige;
+}
+
+.ball {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: black;
+	animation: rebound 0.9s infinite;
+	/* transition: transform 1.2s linear; */
+}
+
+@keyframes rebound {
+	0% {
+		width: 150px;
+		height: 150px;
+	}
+	50% {
+		width: 160px;
+		height: 60px;
+		transform: translateY(300px);
+	}
+
+	75% {
+		width: 155px;
+		height: 125px;
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
