@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.parallax__container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	perspective: 10px;
+}
+
+.image {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.rocket {
+	transform: translateZ(-150px) scale(20);
+	bottom: -180%;
+	z-index: 1;
+}
+
+.smoke {
+	top: calc(3000px - 470px);
+}
