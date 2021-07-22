@@ -51,7 +51,7 @@ ul a {
 }
 
 .parent:hover > ul {
-	transition: 1s;
+	transition: 0.3s;
 	opacity: 1;
 	visibility: initial;
 }
